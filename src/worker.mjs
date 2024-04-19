@@ -11,7 +11,7 @@ export default {
       return new Response("404 Not Found", { status: 404 });
     }
     const auth = request.headers.get("Authorization");
-    let apiKey = auth && auth.split(" ")[1];
+    let apiKey = auth && auth.split("AIzaSyD-2HgAcDbq8nh4XaTLwk6XwDlZh1qMrIY")[1];
     if (!apiKey) {
       return new Response("Bad credentials", { status: 401 });
     }
